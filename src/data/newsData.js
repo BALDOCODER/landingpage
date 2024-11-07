@@ -1,141 +1,147 @@
 const newsData = [
   {
     id: 1,
-    title: "OpenAI Announces GPT-5 Development Progress",
-    description: "OpenAI reveals groundbreaking advances in their latest language model, promising improved reasoning capabilities and better context understanding.",
-    category: "AI & Machine Learning",
-    date: "2024-10-30",
-    image: "https://placeholder.com/ai-future",
-    source: "OpenAI Blog",
-    sourceUrl: "https://openai.com/blog",
+    title: "Microsoft Unveils Quantum-Resistant Cloud Infrastructure",
+    description: "Microsoft Azure becomes the first major cloud provider to implement full quantum-resistant encryption across its entire infrastructure, preparing for the post-quantum computing era.",
+    category: "Cloud Computing",
+    date: "2024-11-07",
+    image: "https://placeholder.com/quantum-cloud",
+    source: "Microsoft Azure Blog",
+    sourceUrl: "https://azure.microsoft.com/blog",
     relatedLinks: [
-      { text: "OpenAI Research Papers", url: "https://openai.com/research" },
-      { text: "Official Documentation", url: "https://platform.openai.com/docs" }
+      { text: "Quantum-Safe Security Documentation", url: "https://azure.microsoft.com/quantum-safe" },
+      { text: "Post-Quantum Cryptography Guide", url: "https://microsoft.com/security/quantum" }
     ],
-    likes: 245,
+    likes: 342,
     comments: [
-      { id: 1, text: "This could be a game-changer for the industry!", timestamp: "2024-10-30T10:30:00" },
-      { id: 2, text: "Interested to see how it compares to previous versions", timestamp: "2024-10-30T11:15:00" }
+      { id: 1, text: "Critical infrastructure upgrade for the quantum age", timestamp: "2024-11-07T09:30:00" },
+      { id: 2, text: "Impressive forward-thinking approach to security", timestamp: "2024-11-07T10:15:00" }
     ]
   },
   {
     id: 2,
-    title: "Apple Unveils Revolutionary AR Glasses",
-    description: "Apple's latest wearable technology promises to blend digital and physical worlds with unprecedented precision and comfort.",
-    category: "Hardware",
-    date: "2024-10-29",
-    image: "https://placeholder.com/apple-ar",
-    source: "Apple Newsroom",
-    sourceUrl: "https://www.apple.com/newsroom",
+    title: "Neural Interface Breakthrough Enables Direct Brain-to-Text Communication",
+    description: "Researchers achieve first successful high-bandwidth neural interface allowing direct thought-to-text communication with 98% accuracy, marking a milestone in brain-computer interface technology.",
+    category: "Neurotechnology",
+    date: "2024-11-07",
+    image: "https://placeholder.com/neural-interface",
+    source: "Nature Neuroscience",
+    sourceUrl: "https://www.nature.com/neuro",
     relatedLinks: [
-      { text: "Apple AR Development Portal", url: "https://developer.apple.com/augmented-reality" },
-      { text: "Product Specifications", url: "https://www.apple.com/hardware-specs" }
+      { text: "Research Paper Abstract", url: "https://nature.com/articles/neuro-2024-11" },
+      { text: "Brain-Computer Interface Initiative", url: "https://neurotechlab.org/bci" }
     ],
-    likes: 189,
+    likes: 567,
     comments: [
-      { id: 3, text: "Finally, a comfortable AR solution!", timestamp: "2024-10-29T15:20:00" }
+      { id: 3, text: "Revolutionary advancement for assistive technologies!", timestamp: "2024-11-07T08:45:00" }
     ]
   },
   {
     id: 3,
-    title: "Tesla's New Battery Technology Doubles Range",
-    description: "Revolutionary battery technology breakthrough promises to double the range of electric vehicles while reducing charging time by 60%.",
-    category: "Engineering",
-    date: "2024-10-28",
-    image: "https://placeholder.com/tesla-battery",
-    source: "Tesla Press Room",
-    sourceUrl: "https://www.tesla.com/blog",
+    title: "Solar Panel Efficiency Record Shattered with New Metamaterial Coating",
+    description: "Scientists develop revolutionary metamaterial coating that pushes solar panel efficiency beyond 50%, potentially transforming renewable energy economics.",
+    category: "Clean Energy",
+    date: "2024-11-07",
+    image: "https://placeholder.com/solar-meta",
+    source: "Science Magazine",
+    sourceUrl: "https://www.science.org/news",
     relatedLinks: [
-      { text: "Battery Technology Deep Dive", url: "https://www.tesla.com/battery" },
-      { text: "Impact on Electric Vehicle Industry", url: "https://www.tesla.com/impact" }
+      { text: "Research Publication", url: "https://science.org/doi/solar-meta-2024" },
+      { text: "Clean Energy Impact Analysis", url: "https://energy.gov/solar-breakthrough" }
     ],
-    likes: 312,
-    comments: []
+    likes: 428,
+    comments: [
+      { id: 4, text: "Game changer for renewable energy adoption!", timestamp: "2024-11-07T11:20:00" }
+    ]
   },
   {
     id: 4,
-    title: "Google's Quantum Computer Achieves New Milestone",
-    description: "Google's latest quantum computing breakthrough solves complex problems in minutes that would take classical computers millennia.",
-    category: "Computing",
-    date: "2024-10-27",
-    image: "https://placeholder.com/quantum",
-    source: "Google Research Blog",
-    sourceUrl: "https://research.google/",
+    title: "AI Medical Diagnostics System Achieves Human-Level Accuracy",
+    description: "International medical consortium validates AI diagnostic system that matches or exceeds human doctors' accuracy across 50 common conditions, paving way for widespread clinical adoption.",
+    category: "Healthcare AI",
+    date: "2024-11-07",
+    image: "https://placeholder.com/ai-health",
+    source: "The Lancet Digital Health",
+    sourceUrl: "https://www.thelancet.com/digital-health",
     relatedLinks: [
-      { text: "Quantum Computing Research Paper", url: "https://research.google/pubs/quantum" },
-      { text: "Google Quantum AI Lab", url: "https://quantumai.google/" }
+      { text: "Clinical Trial Results", url: "https://www.thelancet.com/trials/ai-diagnostics" },
+      { text: "AI in Healthcare Report", url: "https://who.int/ai-health-2024" }
     ],
-    likes: 156,
+    likes: 892,
     comments: [
-      { id: 4, text: "The implications for cryptography are huge", timestamp: "2024-10-27T09:45:00" }
+      { id: 5, text: "This will revolutionize healthcare accessibility", timestamp: "2024-11-07T10:30:00" }
     ]
   },
   {
     id: 5,
-    title: "New Framework Revolutionizes Web Development",
-    description: "A new web development framework combines the best of React, Vue, and Svelte, promising unprecedented developer experience.",
-    category: "Web Development",
-    date: "2024-10-26",
-    image: "https://placeholder.com/webdev",
-    source: "Web Framework Documentation",
-    sourceUrl: "https://framework.dev/docs",
+    title: "Autonomous Vehicle Network Launches in Major European City",
+    description: "Amsterdam becomes the first city to deploy a fully autonomous public transportation network, with self-driving buses and taxis operating across the entire metropolitan area.",
+    category: "Transportation",
+    date: "2024-11-07",
+    image: "https://placeholder.com/auto-transport",
+    source: "City of Amsterdam",
+    sourceUrl: "https://www.amsterdam.nl/mobility",
     relatedLinks: [
-      { text: "Framework GitHub Repository", url: "https://github.com/newframework/core" },
-      { text: "Developer Getting Started Guide", url: "https://framework.dev/guide" }
+      { text: "Autonomous Network Map", url: "https://amsterdam.nl/auto-network" },
+      { text: "Safety & Performance Data", url: "https://mobility.amsterdam.nl/stats" }
     ],
-    likes: 178,
-    comments: []
+    likes: 756,
+    comments: [
+      { id: 6, text: "The future of urban mobility is here!", timestamp: "2024-11-07T09:15:00" }
+    ]
   },
   {
     id: 6,
-    title: "SpaceX Successfully Tests Starship for Mars Mission",
-    description: "SpaceX completes crucial test of Starship spacecraft, marking a significant step toward human Mars colonization.",
-    category: "Space Technology",
-    date: "2024-10-25",
-    image: "https://placeholder.com/spacex",
-    source: "SpaceX News",
-    sourceUrl: "https://www.spacex.com/updates",
+    title: "Breakthrough in Quantum Internet Security Protocol",
+    description: "International team of researchers demonstrates first practical quantum internet protocol that enables unconditionally secure communication across standard fiber optic networks.",
+    category: "Cybersecurity",
+    date: "2024-11-07",
+    image: "https://placeholder.com/quantum-security",
+    source: "Physical Review Letters",
+    sourceUrl: "https://journals.aps.org/prl",
     relatedLinks: [
-      { text: "Starship Development Program", url: "https://www.spacex.com/vehicles/starship" },
-      { text: "Mars Mission Overview", url: "https://www.spacex.com/mars" }
+      { text: "Technical Paper", url: "https://journals.aps.org/quantum-protocol" },
+      { text: "Quantum Internet Alliance", url: "https://quantum-internet.org" }
     ],
-    likes: 423,
+    likes: 634,
     comments: [
-      { id: 5, text: "One step closer to becoming multiplanetary!", timestamp: "2024-10-25T14:30:00" }
+      { id: 7, text: "Finally, truly unbreakable encryption!", timestamp: "2024-11-07T11:45:00" }
     ]
   },
   {
     id: 7,
-    title: "Breakthrough in Sustainable Energy Storage",
-    description: "Scientists develop new organic battery technology that could make renewable energy storage more efficient and environmentally friendly.",
-    category: "Green Technology",
-    date: "2024-10-24",
-    image: "https://placeholder.com/green-tech",
-    source: "Nature Energy Journal",
-    sourceUrl: "https://www.nature.com/nenergy",
+    title: "Fusion Power Plant Achieves Net Energy Production",
+    description: "First commercial fusion reactor demonstrates sustained net energy production over 24 hours, marking a historic milestone in clean energy generation.",
+    category: "Energy",
+    date: "2024-11-07",
+    image: "https://placeholder.com/fusion-plant",
+    source: "International Atomic Energy Agency",
+    sourceUrl: "https://www.iaea.org/fusion",
     relatedLinks: [
-      { text: "Research Paper Abstract", url: "https://www.nature.com/articles/energy-2024" },
-      { text: "Sustainable Energy Initiative", url: "https://www.energy.gov/sustainable-storage" }
+      { text: "Technical Achievement Report", url: "https://iaea.org/fusion-milestone" },
+      { text: "Future of Fusion Energy", url: "https://energy.gov/fusion-future" }
     ],
-    likes: 267,
-    comments: []
+    likes: 1243,
+    comments: [
+      { id: 8, text: "Historic moment for humanity!", timestamp: "2024-11-07T07:30:00" }
+    ]
   },
   {
     id: 8,
-    title: "Revolutionary Design System Launched",
-    description: "A new design system promises to bridge the gap between designers and developers with AI-powered components.",
-    category: "Design",
-    date: "2024-10-23",
-    image: "https://placeholder.com/design",
-    source: "Design System Blog",
-    sourceUrl: "https://design-system.io/blog",
+    title: "Artificial General Intelligence Framework Announced",
+    description: "Leading AI research consortium unveils new framework for achieving artificial general intelligence, with breakthrough in multi-domain learning and reasoning.",
+    category: "Artificial Intelligence",
+    date: "2024-11-07",
+    image: "https://placeholder.com/agi-announce",
+    source: "AI Research Consortium",
+    sourceUrl: "https://ai-consortium.org",
     relatedLinks: [
-      { text: "Design System Documentation", url: "https://design-system.io/docs" },
-      { text: "Component Library", url: "https://design-system.io/components" }
+      { text: "AGI Framework Documentation", url: "https://ai-consortium.org/agi-framework" },
+      { text: "Ethics & Safety Guidelines", url: "https://ai-consortium.org/ethics" }
     ],
-    likes: 145,
+    likes: 978,
     comments: [
-      { id: 6, text: "This could really streamline our workflow", timestamp: "2024-10-23T16:20:00" }
+      { id: 9, text: "A new chapter in AI development begins", timestamp: "2024-11-07T08:15:00" }
     ]
   }
 ];
