@@ -67,6 +67,21 @@ const NewsFeed = () => {
               <span className="category">{article.category}</span>
               <span className="date">{article.date}</span>
             </div>
+            <div className="source-section">
+              <p className="source">
+                Source: <a href={article.sourceUrl} target="_blank" rel="noopener noreferrer">{article.source}</a>
+              </p>
+              <div className="related-links">
+                <h4>Related Links:</h4>
+                <ul>
+                  {article.relatedLinks.map((link, index) => (
+                    <li key={index}>
+                      <a href={link.url} target="_blank" rel="noopener noreferrer">{link.text}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
             <div className="interaction-section">
               <button onClick={() => handleLike(article.id)} className="like-button">
                 ❤️ {article.likes}
