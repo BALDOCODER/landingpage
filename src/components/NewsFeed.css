@@ -1,219 +1,351 @@
 .news-feed {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
 }
 
-.news-feed h2 {
-  text-align: center;
-  color: #2c3e50;
-  margin-bottom: 30px;
-  font-size: 2.5em;
+.news-feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.news-feed-header h1 {
+  color: #1a73e8;
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #f1f3f4;
+  padding: 0.5rem 1rem;
+  border-radius: 24px;
+  width: 300px;
+}
+
+.search-bar svg {
+  color: #5f6368;
+  margin-right: 8px;
+}
+
+.search-bar input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  color: #3c4043;
+}
+
+.trending-section {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.trending-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #202124;
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+}
+
+.trending-section svg {
+  color: #ea4335;
+}
+
+.trending-articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.trending-card {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.trending-card:hover {
+  transform: translateY(-2px);
+}
+
+.trending-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: #202124;
+  line-height: 1.4;
+}
+
+.trending-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #5f6368;
+  font-size: 0.9rem;
 }
 
 .category-filter {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .category-button {
-  background: #f3f4f6;
-  border: none;
+  background: none;
+  border: 1px solid #dadce0;
   padding: 8px 16px;
   border-radius: 20px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 0.9em;
-  color: #4a5568;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  color: #5f6368;
 }
 
 .category-button:hover {
-  background: #e2e8f0;
+  background: #f1f3f4;
+  border-color: #1a73e8;
+  color: #1a73e8;
 }
 
 .category-button.active {
-  background: #3498db;
+  background: #1a73e8;
+  border-color: #1a73e8;
   color: white;
 }
 
 .articles-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.articles-container.list {
+  grid-template-columns: 1fr;
 }
 
 .article-card {
   background: white;
   border-radius: 12px;
-  padding: 25px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
-  display: flex;
-  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .article-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.article-card h3 {
-  margin: 0 0 15px 0;
-  color: #2c3e50;
-  font-size: 1.3em;
-  line-height: 1.4;
-}
-
-.article-description {
-  color: #4a5568;
-  line-height: 1.6;
-  flex-grow: 1;
-}
-
-.article-metadata {
+.article-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 15px 0;
-  font-size: 0.9em;
+  padding: 1rem;
+  border-bottom: 1px solid #f1f3f4;
 }
 
-.category {
-  background: #e2e8f0;
-  padding: 5px 12px;
-  border-radius: 15px;
-  color: #4a5568;
+.category-tag {
+  background: #e8f0fe;
+  color: #1a73e8;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
-.date {
-  color: #718096;
+.article-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.article-actions button {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  color: #5f6368;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.article-actions button:hover {
+  background: #f1f3f4;
+  color: #1a73e8;
+}
+
+.bookmark-button.active {
+  color: #1a73e8;
+}
+
+.article-content {
+  padding: 1.5rem;
+}
+
+.article-content h2 {
+  margin: 0 0 1rem 0;
+  color: #202124;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.article-content p {
+  color: #3c4043;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+}
+
+.article-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #5f6368;
+  font-size: 0.9rem;
+}
+
+.read-time {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .source-section {
-  margin: 15px 0;
-  padding: 15px 0;
-  border-top: 1px solid #e2e8f0;
-  border-bottom: 1px solid #e2e8f0;
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
-.source {
-  margin: 0 0 10px 0;
-  color: #4a5568;
-  font-size: 0.9em;
-}
-
-.source a {
-  color: #3498db;
+.source-link {
+  color: #1a73e8;
   text-decoration: none;
   font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
-.source a:hover {
-  text-decoration: underline;
-}
-
-.related-links h4 {
-  margin: 10px 0;
-  font-size: 0.95em;
-  color: #2d3748;
-}
-
-.related-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.related-links li {
-  margin: 5px 0;
+.related-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .related-links a {
-  color: #3498db;
+  color: #5f6368;
   text-decoration: none;
-  font-size: 0.9em;
-  display: inline-block;
-  padding: 2px 0;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
 }
 
 .related-links a:hover {
-  text-decoration: underline;
-  color: #2980b9;
+  color: #1a73e8;
 }
 
 .interaction-section {
-  margin-top: 20px;
-  border-top: 1px solid #e2e8f0;
-  padding-top: 15px;
+  border-top: 1px solid #f1f3f4;
+  padding-top: 1rem;
 }
 
 .like-button {
-  background: transparent;
-  border: 1px solid #e2e8f0;
+  background: none;
+  border: 1px solid #dadce0;
   padding: 8px 16px;
   border-radius: 20px;
   cursor: pointer;
-  transition: all 0.3s ease;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
+  color: #5f6368;
+  transition: all 0.2s ease;
 }
 
 .like-button:hover {
-  background: #f7fafc;
-  transform: scale(1.05);
+  background: #f1f3f4;
+  border-color: #ea4335;
+  color: #ea4335;
+}
+
+.like-button .liked {
+  color: #ea4335;
 }
 
 .comments-section {
-  margin-top: 20px;
+  margin-top: 1.5rem;
 }
 
 .comments-section h4 {
-  margin: 15px 0;
-  color: #2d3748;
-  font-size: 1.1em;
+  color: #202124;
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .comment {
-  background: #f7fafc;
-  padding: 12px;
+  background: #f8f9fa;
+  padding: 1rem;
   border-radius: 8px;
-  margin: 8px 0;
 }
 
 .comment p {
-  margin: 0;
-  color: #4a5568;
+  margin: 0 0 0.5rem 0;
+  color: #3c4043;
 }
 
-.comment-timestamp {
-  display: block;
-  font-size: 0.8em;
-  color: #718096;
-  margin-top: 5px;
+.comment time {
+  color: #5f6368;
+  font-size: 0.8rem;
 }
 
 .comments-section input {
   width: 100%;
-  padding: 10px;
-  margin-top: 15px;
-  border: 1px solid #e2e8f0;
+  padding: 0.75rem 1rem;
+  border: 1px solid #dadce0;
   border-radius: 8px;
-  font-size: 0.9em;
+  font-size: 0.9rem;
+  color: #3c4043;
+  transition: all 0.2s ease;
 }
 
 .comments-section input:focus {
   outline: none;
-  border-color: #3498db;
-  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 2px rgba(26,115,232,0.2);
 }
 
 .loading {
   text-align: center;
-  padding: 40px;
-  color: #718096;
-  font-size: 1.2em;
+  padding: 3rem;
+  color: #5f6368;
+  font-size: 1.1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
