@@ -1,147 +1,147 @@
 const newsData = [
   {
     id: 1,
-    title: "Microsoft Unveils Quantum-Resistant Cloud Infrastructure",
-    description: "Microsoft Azure becomes the first major cloud provider to implement full quantum-resistant encryption across its entire infrastructure, preparing for the post-quantum computing era.",
-    category: "Cloud Computing",
-    date: "2024-11-07",
-    image: "https://placeholder.com/quantum-cloud",
-    source: "Microsoft Azure Blog",
-    sourceUrl: "https://azure.microsoft.com/blog",
+    title: "Meta Unveils Next Generation Ray-Ban Smart Glasses",
+    description: "Meta launches new smart glasses with Ray-Ban featuring improved AI capabilities, live streaming, and enhanced photo and video capture capabilities, marking a significant step in wearable tech.",
+    category: "Wearable Tech",
+    date: "2024-10-31",
+    image: "https://placeholder.com/meta-glasses",
+    source: "The Verge",
+    sourceUrl: "https://www.theverge.com/tech",
     relatedLinks: [
-      { text: "Quantum-Safe Security Documentation", url: "https://azure.microsoft.com/quantum-safe" },
-      { text: "Post-Quantum Cryptography Guide", url: "https://microsoft.com/security/quantum" }
+      { text: "Meta AI Features Overview", url: "https://meta.com/smart-glasses" },
+      { text: "Ray-Ban Collection Details", url: "https://ray-ban.com/meta" }
     ],
-    likes: 342,
+    likes: 456,
     comments: [
-      { id: 1, text: "Critical infrastructure upgrade for the quantum age", timestamp: "2024-11-07T09:30:00" },
-      { id: 2, text: "Impressive forward-thinking approach to security", timestamp: "2024-11-07T10:15:00" }
+      { id: 1, text: "Finally, smart glasses that look stylish!", timestamp: "2024-10-31T09:30:00" },
+      { id: 2, text: "The AI integration looks promising", timestamp: "2024-10-31T10:15:00" }
     ]
   },
   {
     id: 2,
-    title: "Neural Interface Breakthrough Enables Direct Brain-to-Text Communication",
-    description: "Researchers achieve first successful high-bandwidth neural interface allowing direct thought-to-text communication with 98% accuracy, marking a milestone in brain-computer interface technology.",
-    category: "Neurotechnology",
-    date: "2024-11-07",
-    image: "https://placeholder.com/neural-interface",
-    source: "Nature Neuroscience",
-    sourceUrl: "https://www.nature.com/neuro",
+    title: "Tech Support Services for Seniors See Major Growth",
+    description: "New specialized tech support services focusing on seniors' digital needs emerge as tech adoption among older adults continues to rise post-pandemic, with emphasis on personalized assistance and cybersecurity.",
+    category: "Tech Support",
+    date: "2024-10-31",
+    image: "https://placeholder.com/senior-tech",
+    source: "WIRED",
+    sourceUrl: "https://www.wired.com/tag/technology",
     relatedLinks: [
-      { text: "Research Paper Abstract", url: "https://nature.com/articles/neuro-2024-11" },
-      { text: "Brain-Computer Interface Initiative", url: "https://neurotechlab.org/bci" }
+      { text: "Senior Tech Support Guide", url: "https://wired.com/senior-tech" },
+      { text: "Digital Literacy Programs", url: "https://digital-literacy.org" }
     ],
-    likes: 567,
+    likes: 623,
     comments: [
-      { id: 3, text: "Revolutionary advancement for assistive technologies!", timestamp: "2024-11-07T08:45:00" }
+      { id: 3, text: "Essential service for our aging population", timestamp: "2024-10-31T11:45:00" }
     ]
   },
   {
     id: 3,
-    title: "Solar Panel Efficiency Record Shattered with New Metamaterial Coating",
-    description: "Scientists develop revolutionary metamaterial coating that pushes solar panel efficiency beyond 50%, potentially transforming renewable energy economics.",
-    category: "Clean Energy",
-    date: "2024-11-07",
-    image: "https://placeholder.com/solar-meta",
-    source: "Science Magazine",
-    sourceUrl: "https://www.science.org/news",
+    title: "California's Tech Industry Continues Innovation Despite Economic Challenges",
+    description: "Silicon Valley and California's tech ecosystem shows resilience with continued innovation in AI, clean tech, and digital infrastructure, maintaining global leadership despite economic headwinds.",
+    category: "Tech Industry",
+    date: "2024-10-31",
+    image: "https://placeholder.com/california-tech",
+    source: "WIRED",
+    sourceUrl: "https://www.wired.com/tech-industry",
     relatedLinks: [
-      { text: "Research Publication", url: "https://science.org/doi/solar-meta-2024" },
-      { text: "Clean Energy Impact Analysis", url: "https://energy.gov/solar-breakthrough" }
+      { text: "Silicon Valley Innovation Report", url: "https://wired.com/sv-report" },
+      { text: "California Tech Economic Impact", url: "https://ca.gov/tech-impact" }
     ],
-    likes: 428,
+    likes: 785,
     comments: [
-      { id: 4, text: "Game changer for renewable energy adoption!", timestamp: "2024-11-07T11:20:00" }
+      { id: 4, text: "California's tech ecosystem remains unmatched", timestamp: "2024-10-31T14:20:00" }
     ]
   },
   {
     id: 4,
-    title: "AI Medical Diagnostics System Achieves Human-Level Accuracy",
-    description: "International medical consortium validates AI diagnostic system that matches or exceeds human doctors' accuracy across 50 common conditions, paving way for widespread clinical adoption.",
-    category: "Healthcare AI",
-    date: "2024-11-07",
-    image: "https://placeholder.com/ai-health",
-    source: "The Lancet Digital Health",
-    sourceUrl: "https://www.thelancet.com/digital-health",
+    title: "Tech Companies Intensify Environmental Initiatives",
+    description: "Major tech firms announce new environmental commitments focusing on AI-powered solutions for climate change, enhanced recycling programs, and carbon-neutral operations by 2025.",
+    category: "Environmental Tech",
+    date: "2024-10-31",
+    image: "https://placeholder.com/green-tech",
+    source: "The Verge",
+    sourceUrl: "https://www.theverge.com/tech/environment",
     relatedLinks: [
-      { text: "Clinical Trial Results", url: "https://www.thelancet.com/trials/ai-diagnostics" },
-      { text: "AI in Healthcare Report", url: "https://who.int/ai-health-2024" }
+      { text: "Tech Sustainability Report", url: "https://verge.com/tech-environment" },
+      { text: "Green AI Initiatives", url: "https://green-ai.org" }
     ],
     likes: 892,
     comments: [
-      { id: 5, text: "This will revolutionize healthcare accessibility", timestamp: "2024-11-07T10:30:00" }
+      { id: 5, text: "Great to see tech taking environmental responsibility seriously", timestamp: "2024-10-31T16:30:00" }
     ]
   },
   {
     id: 5,
-    title: "Autonomous Vehicle Network Launches in Major European City",
-    description: "Amsterdam becomes the first city to deploy a fully autonomous public transportation network, with self-driving buses and taxis operating across the entire metropolitan area.",
-    category: "Transportation",
-    date: "2024-11-07",
-    image: "https://placeholder.com/auto-transport",
-    source: "City of Amsterdam",
-    sourceUrl: "https://www.amsterdam.nl/mobility",
+    title: "AI Integration in Software Development Reaches New Milestone",
+    description: "Leading tech companies report 40% increase in development efficiency with new AI-powered coding tools, as machine learning transforms software development practices.",
+    category: "Software Development",
+    date: "2024-10-31",
+    image: "https://placeholder.com/ai-coding",
+    source: "TechCrunch",
+    sourceUrl: "https://techcrunch.com/enterprise",
     relatedLinks: [
-      { text: "Autonomous Network Map", url: "https://amsterdam.nl/auto-network" },
-      { text: "Safety & Performance Data", url: "https://mobility.amsterdam.nl/stats" }
+      { text: "AI Development Tools Report", url: "https://techcrunch.com/ai-dev-tools" },
+      { text: "Future of Coding Study", url: "https://github.com/future-coding" }
     ],
-    likes: 756,
+    likes: 923,
     comments: [
-      { id: 6, text: "The future of urban mobility is here!", timestamp: "2024-11-07T09:15:00" }
+      { id: 6, text: "AI is revolutionizing how we write code", timestamp: "2024-10-31T15:15:00" }
     ]
   },
   {
     id: 6,
-    title: "Breakthrough in Quantum Internet Security Protocol",
-    description: "International team of researchers demonstrates first practical quantum internet protocol that enables unconditionally secure communication across standard fiber optic networks.",
-    category: "Cybersecurity",
-    date: "2024-11-07",
-    image: "https://placeholder.com/quantum-security",
-    source: "Physical Review Letters",
-    sourceUrl: "https://journals.aps.org/prl",
+    title: "Major Breakthrough in Quantum Computing Error Correction",
+    description: "Researchers achieve significant advancement in quantum error correction, bringing practical quantum computing closer to reality with new algorithm reducing decoherence issues.",
+    category: "Quantum Computing",
+    date: "2024-10-31",
+    image: "https://placeholder.com/quantum-computing",
+    source: "Nature",
+    sourceUrl: "https://nature.com/quantum",
     relatedLinks: [
-      { text: "Technical Paper", url: "https://journals.aps.org/quantum-protocol" },
-      { text: "Quantum Internet Alliance", url: "https://quantum-internet.org" }
+      { text: "Quantum Research Paper", url: "https://nature.com/quantum-correction" },
+      { text: "Quantum Computing Roadmap", url: "https://quantum-alliance.org" }
     ],
-    likes: 634,
+    likes: 845,
     comments: [
-      { id: 7, text: "Finally, truly unbreakable encryption!", timestamp: "2024-11-07T11:45:00" }
+      { id: 7, text: "Huge step forward for quantum computing!", timestamp: "2024-10-31T13:45:00" }
     ]
   },
   {
     id: 7,
-    title: "Fusion Power Plant Achieves Net Energy Production",
-    description: "First commercial fusion reactor demonstrates sustained net energy production over 24 hours, marking a historic milestone in clean energy generation.",
-    category: "Energy",
-    date: "2024-11-07",
-    image: "https://placeholder.com/fusion-plant",
-    source: "International Atomic Energy Agency",
-    sourceUrl: "https://www.iaea.org/fusion",
+    title: "AI Chips Market Sees Major Disruption with New Players",
+    description: "New startups challenge established chip manufacturers with innovative AI-specific processor designs, promising significant performance improvements and energy efficiency.",
+    category: "Hardware",
+    date: "2024-10-31",
+    image: "https://placeholder.com/ai-chips",
+    source: "TechCrunch",
+    sourceUrl: "https://techcrunch.com/hardware",
     relatedLinks: [
-      { text: "Technical Achievement Report", url: "https://iaea.org/fusion-milestone" },
-      { text: "Future of Fusion Energy", url: "https://energy.gov/fusion-future" }
+      { text: "AI Chip Market Analysis", url: "https://techcrunch.com/ai-chips" },
+      { text: "Semiconductor Industry Report", url: "https://semi.org/trends" }
     ],
-    likes: 1243,
+    likes: 756,
     comments: [
-      { id: 8, text: "Historic moment for humanity!", timestamp: "2024-11-07T07:30:00" }
+      { id: 8, text: "Competition in AI chips is heating up!", timestamp: "2024-10-31T12:30:00" }
     ]
   },
   {
     id: 8,
-    title: "Artificial General Intelligence Framework Announced",
-    description: "Leading AI research consortium unveils new framework for achieving artificial general intelligence, with breakthrough in multi-domain learning and reasoning.",
-    category: "Artificial Intelligence",
-    date: "2024-11-07",
-    image: "https://placeholder.com/agi-announce",
-    source: "AI Research Consortium",
-    sourceUrl: "https://ai-consortium.org",
+    title: "New AI Safety Guidelines Released by Tech Giants",
+    description: "Major tech companies jointly release comprehensive AI safety and ethics guidelines, focusing on responsible development, transparency, and preventing misuse of artificial intelligence.",
+    category: "AI Ethics",
+    date: "2024-10-31",
+    image: "https://placeholder.com/ai-ethics",
+    source: "The Verge",
+    sourceUrl: "https://www.theverge.com/ai",
     relatedLinks: [
-      { text: "AGI Framework Documentation", url: "https://ai-consortium.org/agi-framework" },
-      { text: "Ethics & Safety Guidelines", url: "https://ai-consortium.org/ethics" }
+      { text: "AI Safety Guidelines", url: "https://ai-safety.org/guidelines" },
+      { text: "Industry Ethics Framework", url: "https://tech-ethics.org" }
     ],
-    likes: 978,
+    likes: 1092,
     comments: [
-      { id: 9, text: "A new chapter in AI development begins", timestamp: "2024-11-07T08:15:00" }
+      { id: 9, text: "Critical step for responsible AI development", timestamp: "2024-10-31T17:15:00" }
     ]
   }
 ];
